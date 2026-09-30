@@ -1,0 +1,7 @@
+{
+  "name": "vee-ai-skills",
+  "owner": { "name": "theveesync-prog" },
+  "plugins": [
+    { "name": "vee-ai-skills", "source": "./", "description": "Vee's reusable skills for Claude Code" }
+  ]
+}
