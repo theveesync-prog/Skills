@@ -1,6 +1,21 @@
 {
   "name": "vee-ai-skills",
   "description": "Vee's reusable skills, agents and rules for Claude Code",
-  "version": "0.1.0",
-  "skills": ["./skills/karpathy"]
+  "version": "0.2.0",
+  "skills": [
+    "./skills/brandkit",
+    "./skills/brutalist",
+    "./skills/full-output",
+    "./skills/image-to-code",
+    "./skills/imagegen-mobile",
+    "./skills/imagegen-web",
+    "./skills/karpathy",
+    "./skills/minimalist",
+    "./skills/redesign",
+    "./skills/soft",
+    "./skills/stitch",
+    "./skills/taste",
+    "./skills/taste-gpt",
+    "./skills/taste-v1"
+  ]
 }
