@@ -1,21 +1,34 @@
 {
   "name": "vee-ai-skills",
   "description": "Vee's reusable skills, agents and rules for Claude Code",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "skills": [
+    "./skills/animate",
+    "./skills/animate-expo",
+    "./skills/animation-vocabulary",
+    "./skills/apple-design",
+    "./skills/ask-sonner",
     "./skills/brandkit",
     "./skills/brutalist",
+    "./skills/emil-design-eng",
+    "./skills/find-animation-opportunities",
     "./skills/full-output",
     "./skills/image-to-code",
     "./skills/imagegen-mobile",
     "./skills/imagegen-web",
+    "./skills/improve-animations",
     "./skills/karpathy",
     "./skills/minimalist",
+    "./skills/mobile-native",
+    "./skills/pick-ui-library",
+    "./skills/prototype",
     "./skills/redesign",
+    "./skills/review-animations",
     "./skills/soft",
     "./skills/stitch",
     "./skills/taste",
     "./skills/taste-gpt",
-    "./skills/taste-v1"
+    "./skills/taste-v1",
+    "./skills/write-swift"
   ]
 }
