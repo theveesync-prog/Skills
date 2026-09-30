@@ -41,6 +41,18 @@ Reusable skills for Claude Code, kept in one place and installable into any proj
 /plugin install vee-ai-skills@vee-ai-skills
 ```
 
+## gstack (full toolkit, separate install)
+
+`gstack/` is a trimmed copy of [garrytan/gstack](https://github.com/garrytan/gstack) (MIT, license in `licenses/`): ~60 skills plus the `bin/`, `lib/` and `browse/` runtime they call. Tests, docs and changelog were removed. It is **not** in the plugin manifest because its skills expect to live at `~/.claude/skills/gstack` and need `./setup` (requires [Bun](https://bun.sh)).
+
+```
+git clone https://github.com/theveesync-prog/Skills.git
+cp -r Skills/gstack ~/.claude/skills/gstack
+cd ~/.claude/skills/gstack && ./setup
+```
+
+Then add a "gstack" section to the project's `CLAUDE.md`. Main commands: `/office-hours`, `/plan-ceo-review`, `/plan-eng-review`, `/plan-design-review`, `/review`, `/qa`, `/ship`, `/land-and-deploy`, `/cso` (security), `/investigate`, `/browse`, `/retro`, `/careful`, `/freeze`. Run `/gstack` if unsure which one fits.
+
 ## Adding a skill
 
 Create `skills/<name>/SKILL.md` with `name` and `description` frontmatter (the description says *when* to use it), then list it in `.claude-plugin/plugin.json`.
@@ -49,4 +61,5 @@ Create `skills/<name>/SKILL.md` with `name` and `description` frontmatter (the d
 
 - `taste` … `stitch` (13 design skills): adapted from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, license in `licenses/`). Renamed for short slash commands.
 - Emil Kowalski's 13 skills (`emil-design-eng` … `write-swift`): from [emilkowalski/skills](https://github.com/emilkowalski/skills) (MIT, license in `licenses/`), names unchanged.
+- `gstack/`: trimmed copy of [garrytan/gstack](https://github.com/garrytan/gstack) (MIT).
 - `karpathy`: adapted from [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) (MIT).
